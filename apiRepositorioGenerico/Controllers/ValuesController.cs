@@ -43,5 +43,12 @@ namespace apiRepositorioGenerico.Controllers
         public void Delete(int id)
         {
         }
+
+        [HttpGet]
+        [Route("Hola")]
+        public ActionResult<string> hola()
+        {
+            return "Yeffri";
+        }
     }
 }
