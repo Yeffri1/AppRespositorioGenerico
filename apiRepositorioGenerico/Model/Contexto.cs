@@ -10,7 +10,9 @@ namespace apiRepositorioGenerico.Model
     {
         public Contexto(DbContextOptions<Contexto> opts) :base(opts)
         {
-
         }
+       public DbSet<Repositorio> Repositorio { get; set; }
+       public DbSet<TipoRepositorio> TipoRepositorio { get; set; }
+       public DbSet<TelefonoRepositorio> TelefonoRepositorio { get; set; }
     }
 }

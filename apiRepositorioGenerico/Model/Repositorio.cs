@@ -36,5 +36,8 @@ namespace apiRepositorioGenerico.Model
 
         [Required(ErrorMessage = "La descripcion no puede ser null ")]
         public string descripcion { get; set; }
+
+        [ForeignKey("tipoID")]
+        public virtual TipoRepositorio TipoRepositorio { get; set; }
     }
 }

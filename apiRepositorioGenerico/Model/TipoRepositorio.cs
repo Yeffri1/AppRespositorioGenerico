@@ -15,5 +15,8 @@ namespace apiRepositorioGenerico.Model
         public int id { get; set; }
         public DateTime fechaIng { get; set; }
         public string descripcion { get; set; }
+
+        public virtual  List<Repositorio> Repositorios { get; set; }
+
     }
 }
